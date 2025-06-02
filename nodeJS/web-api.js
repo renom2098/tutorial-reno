@@ -1,0 +1,1 @@
+const request = new XMLHttpRequest();//nothing tidak ada, hanya berjalan di browser
