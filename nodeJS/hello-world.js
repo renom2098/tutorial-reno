@@ -1,1 +1,1 @@
-console.info("Hello World");//contoh
+console.info("Hello World");//contoh lagi
