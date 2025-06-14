@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const nilai = 70;
+    let ucapan;
+
+    if (nilai >= 75) {
+      ucapan = "Selamat anda lulus";
+    } else {
+      ucapan = "Silahkan coba lagi";
+    }
+
+    document.writeln(`<p>${ucapan}</p>`);
+
+    // ini ternary operator
+    const nilai2 = 80;
+    const ucapan2 = nilai2 >= 75 ? "Selamat anda lulus" : "silahkan coba lagi";
+
+    document.writeln(`<p>${ucapan2}</p>`);
+
+    let parameter = null;
+
+    let data = parameter;
+
+    if (data === undefined || data === null) {
+      data = "Nilai default";
+    }
+
+    document.writeln(`<p>${data}</p>`);
+
+    data = parameter ?? "Nilai Reno";
+    document.writeln(`<p>${data}</p>`);
+
+
+  </script>
+</body>
+
+</html>
