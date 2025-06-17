@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // ...data itu akan dijasikan array secara otomatis
+    function sum(name, ...data) {
+      let total = 0;
+      for (const item of data) {
+        total += item;
+      }
+      document.writeln(`<p>Total ${name} is ${total}</p>`);
+    }
+
+    sum("Banana", 20, 20);
+    sum("Kiwi", 1, 2, 3);
+    sum("Halah", 9, 9);
+
+    sum("dalam bentuk array", ...[9, 9, 9]);
+
+  </script>
+</body>
+
+</html>
