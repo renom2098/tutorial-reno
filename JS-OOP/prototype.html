@@ -9,14 +9,6 @@
 
 <body>
   <script>
-    // const reno = {
-    //   firstName: "Reno"
-    // }
-
-    // const citra = {
-    //   firstName: "Citra"
-    // }
-
     function PersonMe(firstName, lastName) {
       this.firstName = firstName;
       this.lastName = lastName;
@@ -25,14 +17,25 @@
       }
     }
 
+    PersonMe.prototype.sayBye = function () {
+      console.info("Good Bye");
+    }
+
+    PersonMe.prototype.run = function () {
+      console.info(`${this.firstName} is running`);
+    }
+
     const cindy = new PersonMe("Cindy", "Hapsari");
     cindy.sayHello("Reno");
 
     const jinan = new PersonMe("Jinan", "Safa");
-    jinan.sayHello("Citra");
+    jinan.sayHello("Reno");
 
     console.log(cindy);
     console.log(jinan);
+
+    cindy.sayBye();
+    cindy.run();
   </script>
 </body>
 
