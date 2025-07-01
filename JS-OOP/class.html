@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // constructor
+    class Person {
+      constructor(name) {
+        console.info(`Membuat Person ${name}`);
+      }
+    }
+
+    const reno = new Person("Reno");
+    console.info(reno);
+
+    const citra = new Person("Citra");
+
+    // menambahkan property
+    class Person2 {
+      constructor(name) {
+        this.name = name;
+      }
+    }
+
+    const cindy = new Person2("Cindy");
+    console.info(cindy);
+
+
+  </script>
+</body>
+
+</html>
