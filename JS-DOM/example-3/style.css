@@ -78,7 +78,7 @@ body {
 }
 
 /* --- Gaya Tombol --- */
-.card-button {
+.card-button1 {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   background-color: transparent;
@@ -94,8 +94,56 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.card-button:hover {
+.card-button1:hover {
   background-color: #e2e8f0;
+  /* Latar belakang tombol saat disentuh */
+  color: #1a202c;
+  /* Warna teks tombol saat disentuh */
+}
+
+/* --- Gaya Tombol --- */
+.card-button2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid #718096;
+  /* Garis tepi tombol */
+  color: #e2e8f0;
+  /* Warna teks tombol */
+  padding: 0.5rem 2rem;
+  /* Ukuran padding tombol */
+  border-radius: 0.5rem;
+  /* Sudut tombol melengkung */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-button2:hover {
+  background-color: #e2e8f0;
+  /* Latar belakang tombol saat disentuh */
+  color: #1a202c;
+  /* Warna teks tombol saat disentuh */
+}
+
+/* --- Gaya Tombol --- */
+.card-button3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  /* background-color: transparent; */
+  border: 2px solid #718096;
+  /* Garis tepi tombol */
+  color: #e2e8f0;
+  /* Warna teks tombol */
+  padding: 0.5rem 2rem;
+  /* Ukuran padding tombol */
+  border-radius: 0.5rem;
+  /* Sudut tombol melengkung */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-button3:hover {
+  /* background-color: #e2e8f0; */
   /* Latar belakang tombol saat disentuh */
   color: #1a202c;
   /* Warna teks tombol saat disentuh */
