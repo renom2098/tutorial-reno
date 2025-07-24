@@ -1,0 +1,127 @@
+/* --- Pengaturan Dasar & Latar Belakang --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a202c;
+  /* Latar belakang abu-abu gelap */
+  color: #e2e8f0;
+  /* Warna teks terang */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* --- Kontainer Utama --- */
+.main-container {
+  text-align: center;
+}
+
+/* --- Judul Utama --- */
+.main-title {
+  font-size: 3rem;
+  /* Ukuran font besar */
+  font-weight: 700;
+  /* Tebal */
+  margin-bottom: 3rem;
+  /* Jarak bawah */
+}
+
+/* --- Kontainer untuk Kartu --- */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* Jarak antar kartu */
+  flex-wrap: wrap;
+  /* Kartu akan ke bawah jika tidak muat */
+}
+
+/* --- Gaya Kartu --- */
+.card {
+  width: 200px;
+  height: 280px;
+  border: 2px solid #4a5568;
+  /* Garis tepi abu-abu */
+  border-radius: 1rem;
+  /* Sudut melengkung */
+  background-color: transparent;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Memberi ruang antara judul dan tombol */
+  align-items: center;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  border-color: #a0aec0;
+  /* Warna garis tepi saat disentuh */
+  transform: translateY(-5px);
+  /* Sedikit terangkat saat disentuh */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* --- Gaya Tombol --- */
+.card-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid #718096;
+  /* Garis tepi tombol */
+  color: #e2e8f0;
+  /* Warna teks tombol */
+  padding: 0.5rem 2rem;
+  /* Ukuran padding tombol */
+  border-radius: 0.5rem;
+  /* Sudut tombol melengkung */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #e2e8f0;
+  /* Latar belakang tombol saat disentuh */
+  color: #1a202c;
+  /* Warna teks tombol saat disentuh */
+}
+
+/* --- Pengaturan Responsif untuk Layar Kecil --- */
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    /* Agar tidak terlalu ke tengah di HP */
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    /* Kartu akan tersusun ke bawah */
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 250px;
+    /* Lebar maksimum kartu di HP */
+  }
+}
